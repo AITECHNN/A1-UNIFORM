@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <!---link tag-->
+  <link rel="stylesheet" href="./Css file/mystylesheet.css"/>
+ <link rel="stylesheet" href="bootstrap-4.5.3-dist/css/bootstrap.min.css" />
+ <link rel="icon" type="image/png" href="./images of slider/logo.png">
+ <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+ <link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+<!---script tag-->
+
+<script src="bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+ <!---meta tag-->
+ <meta name="author" content="">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>A1 UNIFORM</title>
+</head>
+<body>
+
+    <!-----------------------Navbar section------------------------>
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-xl">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler"
+             aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars" ></i>
+            </button>
+            <a class="navbar-brand" href="#">
+              <img src="./images of slider/logo.png" width="100" height="50" class="d-inline-block align-top" alt="logo" >
+            </a>
+          
+            <div class="collapse navbar-collapse" id="navbarToggler">
+              <ul class="navbar-nav mx-auto" >
+                <li class="nav-item ">
+                    <a class="nav-link" href="#top">HOME </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#categories">CATEGORIZED</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link" href="./OtherPages/contactus.html" >CONTACT US</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./OtherPages/aboutus.html">ABOUT US</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="OtherPages/feedback.html">FEEDBACK</a>
+                   </li>
+                   <li class="cart">
+                  <a href="#" class=" nav-link" >
+                   <img src="./images of slider/cart.png" width="30px" height="30px" class=" my-cart-icon"><span class=" my-cart-badge"></span>
+                  </a>
+                 </li>
+              </ul>
+              
+                 <form class="navbar-form navbar-left" action="#">
+                      <div class="searchBox">
+                        <input type="search" id="search" class="searchText" placeholder="Search"  autocomplete="off" onchange="openPage()">       
+                        <a href="#" class="searchbtn" >
+                          <i class="fa fa-search fa-2x"></i>
+                        </a>    
+                      </div>
+                      </form>
+            </div>
+          </nav>
+</section>
+<!--------------------------------Banner section------------------------------------------>
+<section id="banner">
+  <div id="demo" class="carousel slide" data-ride="carousel">
+
+    <ul class="carousel-indicators">
+<li data-target="#demo" data-slide-to="0" class="active"></li>
+<li data-target="#demo" data-slide-to="1"></li>
+<li data-target="#demo" data-slide-to="2"> </li>
+    </ul>
+
+    <div class="carousel-inner">
+
+        <div class="carousel-item drk active" >
+            <img src="./images of slider/banner.jpg" alt="loading" width="100%" height="700">
+            <div class="carousel-caption">
+                <div class="row ">
+                    <div class="col-md-4 ml-auto ">
+            <h2 >Scoring high in style and class</h2>
+           <p> Adipisci possimus nesciunt quibusdam aliquid est. Sequi. </p>
+      <p><a href="#" target="_blank" class="btn  btn-lg" id="button">BUY NOW</a></p>
+        </div>
+        </div>
+        </div>
+        </div>
+        
+        <div class="carousel-item drk ">
+            <img src="./images of slider/banner3.jpg" alt="loading" width="100%" height="700">
+            <div class="carousel-caption">
+                <div class="row ">
+                    <div class="col-md-4 mx-auto">
+            <h2 >Scoring high in style and class</h2>
+            <p > Adipisci possimus nesciunt quibusdam aliquid est. Sequi.</p>
+            <p><a href="#" target="_blank" class="btn  btn-lg" id="button">BUYNOW</a></p>
+        </div>
+        </div>
+        </div>
+        </div>
+        
+        <div class="carousel-item drk" >
+            <img src="./images of slider/slider3.jpg" alt="loading" width="100%" height="700">
+            <div class="carousel-caption">
+                <div class="row">
+                    <div class="col-md-4 mr-auto">
+            <h2 >Wear a good fit to have a better day</h2>
+            <p><a href="#" target="_blank" class="btn  btn-lg" id="button">BUYNOW</a></p>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+</section>
+<!--------breadcrumbs section--------->
+
+<section class="breadcrumbs-section">
+  <div class="container pl-3 p-sm-3">
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
+        <ol class="breadcrumb">
+          <i class="fa fa-home py-2 mx-2"></i><li class="breadcrumb-item active">Home/</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!---------------------categories section-------------------->
+<section id="categories">
+<div class="container"><!---container-start----->
+  <h2 class="text-center py-5 cate">CATEGORIES</h2>
+
+
+  <!----row-1-start-->
+  <div class="row rounde" data-aos="zoom-in-up">
+    <div class="col-md-3 col-sm-6 image">
+      <a href="categories-pages/Shirts.html">
+     <img src="./categories-img/shirts.jpg" width="100%" height="300">
+      <div class="image-overlay image-overlay-blur">
+      <div class="image-title">SHIRTS</div>
+       </div>
+       </a>
+    </div>
+
+    <div class="col-md-3 col-sm-6 image">
+      <a href="./categories-pages/skirts.html" >
+      <img src="./categories-img/skirts.jpg" width="100%" height="300">
+       <div class="image-overlay image-overlay-blur">
+       <div class="image-title">SKIRTS</div>
+        </div>
+        </a>
+     </div>
+
+     <div class="col-md-3 col-sm-6 image">
+      <a href="./categories-pages/frock.html">
+      <img src="./categories-img/frocks.jpg" width="100%" height="300">
+       <div class="image-overlay image-overlay-blur">
+       <div class="image-title">FROCKS</div>
+        </div>
+        </a>
+     </div>
+
+     <div class="col-md-3 col-sm-6 image">
+      <a href="categories-pages/T-shirt.html">
+      <img src="./categories-img/t-shirt.jpg" width="100%" height="300">
+       <div class="image-overlay image-overlay-blur">
+       <div class="image-title">P.T.T-SHIRTS</div>
+        </div>
+        </a>
+     </div>
+    </div><!----row-1-end-->
+
+
+
+
+<!----row-2-start-->
+  <div class="row my-5 rounde" data-aos="zoom-in-up">
+    <div class="col-md-3 col-sm-6 image">
+      <a href="./categories-pages/shorts.html">
+      <img src="./categories-img/shorts.jpg" width="100%" height="300">
+       <div class="image-overlay image-overlay-blur">
+       <div class="image-title">P.T.SHORTS</div>
+        </div>
+        </a>
+     </div>
+
+     <div class="col-md-3 col-sm-6 image">
+      <a href="categories-pages/track-pant.html">
+      <img src="./categories-img/p.t.pant.jpg" width="100%" height="300">
+       <div class="image-overlay image-overlay-blur">
+       <div class="image-title">P.T.TRACK PANTS</div>
+        </div>
+        </a>
+     </div>
+
+     <div class="col-md-3 col-sm-6  image">
+      <a href="categories-pages/belt.html">
+      <img src="./categories-img/belts.jpg" width="100%" height="300">
+       <div class="image-overlay image-overlay-blur">
+       <div class="image-title">BELTS</div>
+        </div>
+      </a>
+     </div>
+
+     <div class="col-md-3 col-sm-6 image">
+      <a href="./categories-pages/ties.html">
+     <img src="./categories-img/ties.jpg" width="100%" height="300">
+     <div class="image-overlay image-overlay-blur">
+     <div class="image-title">TIES</div>
+     </div>
+     </a>
+     </div>
+</div><!----row-2-end-->
+
+
+
+
+<!----row-3-start-->
+<div class="row my-5 rounde" data-aos="zoom-in-up">
+  <div class="col-md-6 col-sm-12 image">
+    <a href="./categories-pages/logo.html">
+    <img src="./categories-img/logos.jpg" width="100%" height="300">
+     <div class="image-overlay image-overlay-blur">
+     <div class="image-title">LOGOS</div>
+      </div>
+      </a>
+   </div>
+   <div class="col-md-6 col-sm-12 image">
+    <a href="./categories-pages/sock.html">
+    <img src="./categories-img/socks.jpg" width="100%" height="300">
+     <div class="image-overlay image-overlay-blur">
+     <div class="image-title">SOCKS</div>
+      </div>
+    </a>
+   </div>
+</div><!----row-3-end-->
+
+</div><!---container-end----->
+
+</section><!--categories Section end -->
+
+
+
+
+<!---product-grid-section-start-->
+<section class="product">
+  <div class="container">
+    <h2 class="text-center py-5">FEATURE PRODUCTS</h2>
+    <!---row-1-start-->
+    <div class="row" data-aos="fade-up" data-aos-easing="ease-in-out">
+      <div class="col-md-4 col-sm-6">
+        <div class="product-grid">
+          <div class="product-image">
+            <a href="#!" class="image" >
+              <img src="./product-grid/Shirt.jpg" alt="" class="pic1">
+              <img src="./product-grid/Shirt1.jpg" alt="" class="pic2">
+            </a>
+            <ul class="social">
+              <li><a href="#nav-bar"><i class="fa fa-search"></i></a></li>
+              <li><a href="#!"><i class="fa fa-shopping-bag"></i></a></li>
+              <li><a href="#!" class="my-cart-btn" data-id="1" data-name="White Shirt" data-summary="summary 1" data-price="2000" data-quantity="1" data-image="./product-grid/Shirt.jpg"><i class="fa fa-shopping-cart"></i></a></li>
+            </ul>
+          </div>
+
+          <div class="product-content ">
+            <h3 class="title"><a href="#">White Shirt</a></h3>
+            <div class="price">2000.RS</div>
+            <ul class="rating">
+              <li class="fa fa-star"></li>
+              <li class="fa fa-star"></li>
+              <li class="fa fa-star"></li>
+              <li class="fa fa-star"></li>
+              <li class="fa fa-star"></li>
+            </ul>
+          </div>
+        </div>
+      </div> 
+
+      <div class="col-md-4 col-sm-6">
+        <div class="product-grid">
+          <div class="product-image">
+            <a href="#!" class="image"  class="product">
+              <img src="./product-grid/skirt.jpg" alt="" class="pic1">
+              <img src="./product-grid/skirt1.jpg" alt="" class="pic2">
+            </a>
+            <ul class="social">
+              <li><a href="#nav-bar"><i class="fa fa-search"></i></a></li>
+              <li><a href="#!"><i class="fa fa-shopping-bag"></i></a></li>
+              <li><a href="#!" class="my-cart-btn" data-id="2" data-name="Blue Skirt" data-summary="summary 2" data-price="800" data-quantity="1" data-image="./product-grid/skirt.jpg"><i class="fa fa-shopping-cart"></i></a></li>
+            </ul>
+          </div>
+
+          <div class="product-content ">
+            <h3 class="title"><a href="#">Girl's Blue  Skirt</a></h3>
+            <div class="price">800.RS</div>
+            <ul class="rating">
+              <li class="fa fa-star"></li>
+              <li class="fa fa-star"></li>
+              <li class="fa fa-star"></li>
+              <li class="fa fa-star"></li>
+              <li class="fa fa-star"></li>
+            </ul>
+          </div>
+        </div>
+      </div> 
+      
+      <div class="col-md-4 col-sm-12" >
+        <div class="product-grid">
+          <div class="product-image">
+            <a href="#!" class="image"  class="product">
+              <img src="./product-grid/t-shirt.jpg" alt="" class="pic1">
+              <img src="./product-grid/t-shirt1.jpg" alt="" class="pic2">
+            </a>
+            <ul class="social">
+              <li><a href="#nav-bar"><i class="fa fa-search"></i></a></li>
+              <li><a href="#!"><i class="fa fa-shopping-bag"></i></a></li>
+              <li><a  href="#!" class="my-cart-btn" data-id="3" data-name="Light Blue T-shirt" data-summary="summary 3" data-price="1000" data-quantity="1" data-image="./product-grid/t-shirt.jpg" ><i class="fa fa-shopping-cart"></i></a></li>
+            </ul>
+          </div>
+
+          <div class="product-content ">
+            <h3 class="title"><a href="#">LightBlue P.T.T-Shirt </a></h3>
+            <div class="price">1000.RS</div>
+            <ul class="rating">
+              <li class="fa fa-star"></li>
+              <li class="fa fa-star"></li>
+              <li class="fa fa-star"></li>
+              <li class="fa fa-star"></li>
+              <li class="fa fa-star"></li>
+            </ul>
+          </div>
+        </div>
+      </div> 
+    </div> <!---row-1-end-->
+    
+<!---row-2-start-->
+    <div class="row" data-aos="fade-up"data-aos-easing="ease-in-out">
+      <div class="col-md-4 col-sm-6">
+        <div class="product-grid">
+          <div class="product-image">
+            <a href="#!" class="image"  class="product">
+              <img src="./product-grid/track-pant.jpg" alt="" class="pic1">
+              <img src="./product-grid/track-pant1.jpg" alt="" class="pic2">
+            </a>
+            <ul class="social">
+              <li><a href="#nav-bar"><i class="fa fa-search"></i></a></li>
+              <li><a href="#!"><i class="fa fa-shopping-bag"></i></a></li>
+              <li><a href="#!"  class="my-cart-btn" data-id="4" data-name="Black Track Pant" data-summary="summary 4" data-price="1500" data-quantity="1" data-image="./product-grid/track-pant.jpg" ><i class="fa fa-shopping-cart"></i></a></li>
+            </ul>
+          </div>
+
+          <div class="product-content ">
+            <h3 class="title"><a href="#">Black Track Pant</a></h3>
+            <div class="price">1500.RS</div>
+            <ul class="rating">
+              <li class="fa fa-star"></li>
+              <li class="fa fa-star"></li>
+              <li class="fa fa-star"></li>
+              <li class="fa fa-star"></li>
+              <li class="fa fa-star"></li>
+            </ul>
+          </div>
+        </div>
+      </div> 
+
+      <div class="col-md-4 col-sm-6">
+        <div class="product-grid">
+          <div class="product-image">
+            <a href="#!" class="image"  class="product">
+              <img src="./product-grid/belt.jpg" alt="" class="pic1">
+              <img src="./product-grid/belt1.jpg" alt="" class="pic2">
+            </a>
+            <ul class="social">
+              <li><a href="#nav-bar"><i class="fa fa-search"></i></a></li>
+              <li><a href="#!"><i class="fa fa-shopping-bag"></i></a></li>
+              <li><a href="#!"  class="my-cart-btn" data-id="5" data-name="Classic Brown Belt" data-summary="summary 5" data-price="800" data-quantity="1" data-image="./product-grid/belt.jpg"><i class="fa fa-shopping-cart"></i></a></li>
+            </ul>
+          </div>
+
+          <div class="product-content ">
+            <h3 class="title"><a href="#">Classic Brown Belt</a></h3>
+            <div class="price">800.RS</div>
+            <ul class="rating">
+              <li class="fa fa-star"></li>
+              <li class="fa fa-star"></li>
+              <li class="fa fa-star"></li>
+              <li class="fa fa-star"></li>
+              <li class="fa fa-star"></li>
+            </ul>
+          </div>
+        </div>
+      </div> 
+      
+      <div class="col-md-4 col-sm-12 ">
+        <div class="product-grid">
+          <div class="product-image">
+            <a href="#!" class="image"  class="product">
+              <img src="./product-grid/tie.jpg" alt="" class="pic1">
+              <img src="./product-grid/tie1.jpg" alt="" class="pic2">
+            </a>
+            <ul class="social">
+              <li><a href="#nav-bar"><i class="fa fa-search"></i></a></li>
+              <li><a href="#!"><i class="fa fa-shopping-bag"></i></a></li>
+              <li><a href="#!"  class="my-cart-btn" data-id="6" data-name="Black Tie" data-summary="summary 6" data-price="400" data-quantity="1" data-image="./product-grid/tie.jpg" ><i class="fa fa-shopping-cart"></i></a></li>
+            </ul>
+          </div>
+
+          <div class="product-content ">
+            <h3 class="title"><a href="#">Tie</a></h3>
+            <div class="price">400.RS</div>
+            <ul class="rating">
+              <li class="fa fa-star"></li>
+              <li class="fa fa-star"></li>
+              <li class="fa fa-star"></li>
+              <li class="fa fa-star"></li>
+              <li class="fa fa-star"></li>
+            </ul>
+          </div>
+        </div>
+      </div> 
+    </div><!---row-2-end-->
+
+
+
+<!---row-3-start-->
+<div class="row" data-aos="fade-up" data-aos-easing="ease-in-out">
+  <div class="col-md-4 col-sm-6" >
+    <div class="product-grid">
+      <div class="product-image">
+        <a href="#!" class="image"  class="product">
+          <img src="./product-grid/sock.jpg" alt="" class="pic1">
+          <img src="./product-grid/sock1.jpg" alt="" class="pic2">
+        </a>
+        <ul class="social">
+          <li><a href="#nav-bar"><i class="fa fa-search"></i></a></li>
+          <li><a href="#!"><i class="fa fa-shopping-bag"></i></a></li>
+          <li><a href="#!" class="my-cart-btn" data-id="7" data-name="Black Sock" data-summary="summary 7" data-price="300" data-quantity="1" data-image="./product-grid/sock1.jpg" ><i class="fa fa-shopping-cart"></i></a></li>
+        </ul>
+      </div>
+
+      <div class="product-content ">
+        <h3 class="title"><a href="#">Sock</a></h3>
+        <div class="price">300.RS</div>
+        <ul class="rating">
+          <li class="fa fa-star"></li>
+          <li class="fa fa-star"></li>
+          <li class="fa fa-star"></li>
+          <li class="fa fa-star"></li>
+          <li class="fa fa-star"></li>
+        </ul>
+      </div>
+    </div>
+  </div> 
+
+  <div class="col-md-4 col-sm-6">
+    <div class="product-grid">
+      <div class="product-image">
+        <a href="#!" class="image"  class="product">
+          <img src="./product-grid/short.jpg" alt="" class="pic1">
+          <img src="./product-grid/short1.jpg" alt="" class="pic2">
+        </a>
+        <ul class="social">
+          <li><a href="#nav-bar"><i class="fa fa-search"></i></a></li>
+          <li><a href="#!"><i class="fa fa-shopping-bag"></i></a></li>
+          <li><a href="#!" class="my-cart-btn" data-id="8" data-name="Gray Short" data-summary="summary 8" data-price="600" data-quantity="1" data-image="./product-grid/short.jpg" ><i class="fa fa-shopping-cart"></i></a></li>
+        </ul>
+      </div>
+
+      <div class="product-content ">
+        <h3 class="title"><a href="#">Gray Short</a></h3>
+        <div class="price">600.RS</div>
+        <ul class="rating">
+          <li class="fa fa-star"></li>
+          <li class="fa fa-star"></li>
+          <li class="fa fa-star"></li>
+          <li class="fa fa-star"></li>
+          <li class="fa fa-star"></li>
+        </ul>
+      </div>
+    </div>
+  </div> 
+  
+  <div class="col-md-4 col-sm-12">
+    <div class="product-grid">
+      <div class="product-image">
+        <a href="#!" class="image" class="product">
+          <img src="./product-grid/logo.jpg" alt="" class="pic1">
+          <img src="./product-grid/logo1.jpg" alt="" class="pic2">
+        </a>
+        <ul class="social">
+          <li><a href="#nav-bar"><i class="fa fa-search"></i></a></li>
+          <li><a href="#!"><i class="fa fa-shopping-bag"></i></a></li>
+          <li><a href="#!" class="my-cart-btn"  data-id="9" data-name="logo" data-summary="summary 9" data-price="400" data-quantity="1" data-image="./product-grid/logo.jpg" ><i class="fa fa-shopping-cart"></i></a></li>
+        </ul>
+      </div>
+
+      <div class="product-content ">
+        <h3 class="title"><a href="#">Logos</a></h3>
+        <div class="price">400.RS</div>
+        <ul class="rating">
+          <li class="fa fa-star"></li>
+          <li class="fa fa-star"></li>
+          <li class="fa fa-star"></li>
+          <li class="fa fa-star"></li>
+          <li class="fa fa-star"></li>
+        </ul>
+      </div>
+    </div>
+  </div> 
+</div><!---row-3-end-->
+
+
+
+  </div>
+</section>
+
+<!-- <div class="select">
+
+</div> -->
+<!---product-grid-section-end-->
+
+
+
+
+  <!-----------------------------------------social media-section-start------------------------------------>
+  <section id="contact">
+    <div class="container text-center">
+    <p>FIND US ON SOCIAL MEDIA</p>
+    <div class="contact-icons">
+    <a href="#"><img src="./social-icon/facebook.png"></a>
+    <a href="#"><img src="./social-icon/insta.png"></a>
+    <a href="#"><img src="./social-icon/tweeter.png"></a>
+    <a href="#"><img src="./social-icon/whatsapp.png"></a>
+    </div>
+    </div>
+    </section>  <!-----------------------------------------social media-section-end------------------------------------>
+
+
+
+
+<!----------------------------footer section----------------------------------->
+<section id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 footer-box">
+        <img src="./images of slider/logo.png">
+        <p>
+          AI Uniform has the experience of offering a quality range of school and corporate uniforms. The team has state of art manufacturing unit and a vibrant workforce of dedicated workers who have sold a million school uniforms across 200+ schools. It has delivered not only quality products but also a memorable uniform program to its clients.
+          </p>
+      </div>
+      <div class="col-md-4 footer-box">
+       <p><b>CONTACT US</b></p>
+       <P><i class="fa fa-location-arrow" ></i> New Road, Sindh, Karachi - 77200</P>
+       <P><i class="fa fa-mobile"></i>+(92) 0321-0239478</P>
+       <P><i class="fa fa-envelope"></i>A1Uniform@gmail.com</P>
+      </div>
+  
+      <div class="col-md-4 footer-box">
+        <p><b>SUBMIT YOUR EMAIL</b></p>
+       <input type="email" class="form-control" placeholder="YOUR EMAIL">
+       <button type="button" class="btn btn-primary">SUBMIT</button>
+       </div>
+    </div>
+    <hr>
+    <p class="copyright">Copyrights © 2021 - All rights reserved</p>
+  </div>
+  </section><!----------------------------footer section-end----------------------------------->
+
+
+ <!---------proloader-section-start------>
+ <div id="preloader">
+  <div id="status">&nbsp;</div>
+</div>
+  <!---------proloader-section-end------>
+
+
+
+
+  
+<!----scripting section-start----->
+
+
+  <!---------Shoppingcart-script---->
+<!-- <script src="main.js"></script> -->
+<!---------Shoppingcart-script-end---->
+
+
+  <!-----smooth-scroll-------->
+  <script src="./smooth-scroll/smooth-scroll.js"></script>
+  <script>
+      var scroll = new SmoothScroll('a[href*="#"]');
+  </script>
+
+
+  <!------------preloader-script------->
+ <script >
+   $(window).on('load',function(){
+    $('#preloader').delay(2000).fadeOut('slow');
+    $('body').delay(2000).css({'overflow':'visible'});
+   });
+ </script>
+
+
+<!---------scroll-effect-div-animation------->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    offset: 200,
+    duration: 1200,
+  });
+</script>
+
+
+<!------navbar-show-&-hide-animation---->
+<script>
+  var lastScrollTop= 0;
+  navbar = document.getElementById("nav-bar");
+  window.addEventListener("scroll", function(){
+    var scrollTop=window.pageYOffset || document
+    .documentElement.scrollTo;
+    if(scrollTop > lastScrollTop){
+      navbar.style.top="-10rem";
+    }else{
+      navbar.style.top="0";
+    }
+    lastScrollTop = scrollTop;
+  })
+</script>
+<!----scripting section-end----->
+
+<script>
+function openPage() {
+  var x = document.getElementById("search").value;
+
+  if (x==="shirt") {
+    window.open("./categories-pages/shirts.html");
+  }
+
+  if (x==="skirt") {
+    window.open("./categories-pages/skirts.html");
+  }
+
+  if (x==="track pant") {
+    window.open("./categories-pages/track-pant.html");
+  }
+
+  if (x==="frock") {
+    window.open("./categories-pages/frock.html");
+  }
+
+  if (x==="sock") {
+    window.open("./categories-pages/sock.html");
+  }
+
+  if (x==="tie") {
+    window.open("./categories-pages/ties.html");
+  }
+
+  if (x==="logo") {
+    window.open("./categories-pages/logo.html");
+  }
+
+  if (x==="short") {
+    window.open("./categories-pages/shorts.html");
+  }
+
+  if (x==="t-shirt") {
+    window.open("./categories-pages/T-shirt.html");
+  }
+
+  if (x==="belt") {
+    window.open("./categories-pages/belt.html");
+  }
+
+
+
+}
+
+</script>
+
+<script src="./scriptFile/jquery.min.js"></script>
+<script type='text/javascript' src="./bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
+<script type='text/javascript' src="./scriptFile/jquery.mycart.js"></script>
+<script type='text/javascript' src="./scriptFile/cart.js"></script>
+
+</body>
+</html>

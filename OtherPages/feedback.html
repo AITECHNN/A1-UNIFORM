@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <!---link tag-->
+ <link rel="icon" type="image/png" href="../images of slider/logo.png">
+ <link rel="stylesheet" href="../Css file/mystylesheet.css "/>
+ <link rel="stylesheet" href="../bootstrap-4.5.3-dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<!---script tag-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="../bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>   
+ 
+    <title>A1 UNIFORM</title>
+</head>
+<body>
+   
+  
+
+  <section  id="nav-bar">
+    <nav class="navbar navbar-expand-xl">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars" ></i>
+      </button>
+      <a class="navbar-brand" href="#">
+        <img src="../images of slider/logo.png" width="100" height="50" class="d-inline-block align-top" alt="logo" >
+      </a>
+    
+      <div class="collapse navbar-collapse" id="navbarToggler">
+        <ul class="navbar-nav mx-auto" >
+          <li class="nav-item ">
+              <a class="nav-link" href="../index.html">HOME </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">CATEGORIZED</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="./contactus.html" >CONTACT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./aboutus.html">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./feedback.html">FEEDBACK</a>
+             </li>
+        </ul>
+
+         <form class="navbar-form navbar-left" action="#">
+        <div class="searchBox">
+          <input type="text" class="searchText" placeholder="Search">
+          <a href="#" class="searchbtn">
+            <i class="fa fa-search fa-2x"></i>
+          </a>
+        </div>
+      </form>
+      
+      </div>
+     
+        
+    </nav>
+  </section>
+
+  
+<!-----breadcrumbs-section-->
+  <section class="breadcrumbs-section">
+    <div class="container pl-3 p-sm-3">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="text-center">FEEDBACK</h2>
+          <ol class="breadcrumb">
+            <i class="fa fa-home py-2 mx-2"></i><li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+            <i class="fa fa-commenting py-2 mx-3"></i><li class="breadcrumb-item active">feedback</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!---form-section--start------->
+  <section id="feedback">
+   <div class="container py-5 shadow-lg">
+       <div class="row">
+           <div class="col-md-3"></div>
+           <div class="col-md-6">
+               <p class="text-dark"> We would love to hear your thoughts, concerns or problem with anything 
+                   so we can improve!</p>
+                   <hr>
+                   <form class="inputsection"  onsubmit="return validation()" class="bg-light">
+                       <h4>Feedback Type</h4>
+                       <div class="row">
+                           <div class="col-md-4">
+                               <input type="radio" name="feed" required>&nbsp;&nbsp;<label>Comments</label>
+                           </div>
+
+                           <div class="col-md-4">
+                            <input type="radio" name="feed">&nbsp;&nbsp;<label>Suggestions</label>
+                        </div>
+
+                        <div class="col-md-4">
+                            <input type="radio" name="feed">&nbsp;&nbsp;<label>Questions</label>
+                        </div>
+                       </div>
+
+                       <div class="form-group mt-3 mb-3">
+                       <label class="form-label">Full Name</label>
+                       <input type="text" class="form-control" id="user" placeholder="Enter Your Name" autocomplete="off">
+                       <span id="username" class="text-danger"> </span>
+                        </div>
+
+                        <div class="form-group mb-2">
+                            <label class="form-label">Email</label>
+                            <input type="text" class="form-control" id="emails" placeholder="ex: myname@example.com" autocomplete="off">
+                            <span id="emailids" class="text-danger"> </span>
+                             </div>
+
+                               <div class="form-group mb-2">
+                                <label class="form-label">Describe Feedback</label>
+                                <textarea rows="6" class="form-control" required></textarea>
+                                 </div>
+                                 <button type="submit" class="btn" value="submit"><i class="fa fa-paper-plane mx-2"></i>Submit Feedback</button>
+
+                   </form>
+           </div>
+       </div>
+   </div>
+  </section><!---form-section--end------->
+
+
+<!----------------------------footer section----------------------------------->
+<section id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 footer-box">
+          <img src="../images of slider/logo.png">
+          <p><b>A static website stores a unique file for every page of a static website. Each time that page is requested, the same content is returned.
+             This content is created once, during the design of the website. 
+             </b></p>
+        </div>
+        <div class="col-md-4 footer-box">
+         <p><b>CONTACT US</b></p>
+         <P><i class="fa fa-location-arrow" ></i> New Road, Sindh, Karachi - 77200</P>
+         <P><i class="fa fa-mobile"></i>+(92) 0321-0239478</P>
+         <P><i class="fa fa-envelope"></i>A1Uniform@gmail.com</P>
+        </div>
+    
+        <div class="col-md-4 footer-box">
+          <p><b>SUBMIT YOUR EMAIL</b></p>
+         <input type="email" class="form-control" placeholder="YOUR EMAIL">
+         <button type="button" class="btn btn-primary">SUBMIT</button>
+         </div>
+     
+    
+      </div>
+      <hr>
+      <p class="copyright">Copyrights © 2021 - All rights reserved</p>
+    </div>
+    </section><!----------------------------footer section-end----------------------------------->
+  
+<!---------proloader-section-start------>
+<div id="preloader">
+  <div id="status">&nbsp;</div>
+</div>
+  <!---------proloader-section-end------>
+
+
+    <!------------preloader-script------->
+ <script >
+  $(window).on('load',function(){
+   $('#preloader').delay(800).fadeOut('slow');
+   $('body').delay(800).css({'overflow':'visible'});
+  });
+</script>
+
+
+<script>
+  function validation(){
+    var user= document.getElementById('user').value;
+    var emails= document.getElementById('emails').value;
+    
+
+    if (user == "") {
+       document.getElementById('username').innerHTML ="** Please  Fill  The  UserName  Field";
+        return false;
+      }
+      if((user.length <= 2) || (user.length > 20)) {
+				document.getElementById('username').innerHTML =" ** Username lenght must be between 2 and 20";
+				return false;	
+			}
+			if(!isNaN(user)){
+				document.getElementById('username').innerHTML =" ** only characters are allowed";
+				return false;
+			}
+
+
+      if(emails == ""){
+				document.getElementById('emailids').innerHTML =" ** Please fill the email id field";
+				return false;
+			}
+			if(emails.indexOf('@') <= 0 ){
+				document.getElementById('emailids').innerHTML =" ** @ Invalid Position";
+				return false;
+			}
+
+			if((emails.charAt(emails.length-4)!='.') && (emails.charAt(emails.length-3)!='.')){
+				document.getElementById('emailids').innerHTML =" ** . Invalid Position";
+				return false;
+			}
+
+
+  }
+ 
+</script>
+
+
+</body>
+
+</html>

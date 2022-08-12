@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Montserrat+Subrayada:wght@700&family=Spectral+SC:wght@300&family=Staatliches&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*-----------Media-query-----*/
+html{
+    font-size: 62.5%;
+}
+
+@media (max-width:1199px){
+
+    .navbar-nav li a:hover {
+        border:none!important;
+        box-shadow:none!important;
+    }
+    
+    .searchbtn{
+        margin-bottom: 2rem;
+    }
+
+   .searchText{
+        margin-left: 25rem;
+        margin-bottom: 2rem;
+        
+    }
+     
+}
+
+
+/*------------preloader-section------*/
+
+#preloader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffff;
+    z-index: 9999999;
+}
+
+#status{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url(../preloader_gif/preloader2.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 15%;
+}
+
+
+/*--------------scrollbar-section-------*/
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+::-webkit-scrollbar-track{
+    width: 15px;
+    background: #212529;
+    border-left: 0 solid white;
+    border-right: 0 solid white;
+}
+::-webkit-scrollbar-thumb{
+    background: #3bb78f;
+    width: 0;
+    height: 30%;
+    transform: 0.8s ease;
+    cursor: pointer;
+}
+ 
+/*-----------------Navbar section------------------------------*/
+#nav-bar{
+    position: sticky;
+    top: 0;
+    z-index: 1 !important;
+    transition: all 0.8s;
+    width: 100%;
+}
+
+
+.navbar{
+    background-color:#60d47d;
+}
+
+.navbar-brand img{
+    margin-left: 3rem;
+}
+.navbar-nav li{
+padding: 0 2.5rem;
+font-weight: 600;
+}
+
+.navbar-nav li a{
+    font-family: 'Spectral SC', serif;
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    transition: 0.8s;
+    letter-spacing: .2rem;
+   
+}
+.navbar-nav li a:hover{
+    box-shadow: 0 1rem 1rem -1.2rem rgba(0, 0 , 0, 5);
+    border-bottom: solid .2rem rgb(37, 66, 55);
+    transform: translateY(-8px)
+   
+}
+.navbar-toggler i{
+    color: rgb(0, 0, 0);
+    font-size: 2.5rem ;
+    border: none;
+}
+
+
+.searchbtn:hover
+{
+    text-decoration: none;
+    color: #fff;
+}
+
+.searchBox{
+    margin-right: 3rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.searchText{
+    width: 0rem;
+    font-size: 1.4rem;
+    border-radius: 1.5rem;
+    border: none;
+    outline: none;
+    transition: all 0.8s;
+}
+.searchText:focus{
+    outline: none;
+}
+
+.searchbtn{
+    width: 4.0rem;
+    height: 4.0rem;
+    display: grid;
+    position: absolute;
+    right: 1rem;
+    place-items: center;
+    border-radius: 20px;
+    background-color: #000;
+    color: #ffff;
+  
+}
+.searchBox:hover >.searchText{
+    width: 20rem;
+    padding: 1.0rem;
+    box-shadow: 0 2rem 2rem -1.5rem rgba(0, 0 , 0, 10);
+
+}
+.searchBox:hover >.searchbtn{
+    background-color: #fff;
+    color: #000;
+}
+
+/*-----------------Navbar section-end------------------------------*/
+
+
+
+/*-----breadcrumbs-section-------*/
+.breadcrumb{
+font-size: 1.8rem;
+    margin-top: 4rem;
+    font-family: 'Spectral SC', serif;
+     list-style: none;
+}
+.breadcrumb a{
+    text-decoration: none;
+    color: #60d47d;
+   
+}
+.breadcrumbs-section h2{
+    margin-top: 2rem;
+    font-size: 3rem;
+    font-family: 'Montserrat Subrayada', sans-serif;
+}
+
+
+/*----------------shopping cart section---------*/
+
+
+.container{
+   width: 100%;
+   margin: 4rem auto;
+   font-family:'Spectral SC', serif ;
+    border-radius: 2rem;
+}
+
+.product i {
+    font-size: 3.5rem;
+    color: #60d47d;
+    cursor: pointer;
+}
+.quantity i{
+
+   font-size: 3.5rem;
+   color: #60d47d;
+   cursor: pointer;
+}
+
+.product-title{
+    width: 100%;
+    font-size: 3rem;
+    text-align: center;
+}
+.price{
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.quantity{
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.total{
+    width:100%;
+    font-size: 2rem;
+} 
+
+.product{
+    width: 100%;
+   font-size: 2rem;
+}
+
+.basketTotalContainer{
+    text-align: end;
+    width: 100%;
+    font-size: 2rem;
+}
+.basketTotalTitle{
+    width: 100%;
+    font-size: 2rem;
+}
+.basketTotal{
+    width: 100%;
+    font-size: 2rem;
+}
+
+
+
+ /*----------------------------footer section----------------------*/
+#footer{
+    background-color:#60d47d;
+}
+.footer-img{
+    width: 100%;
+}
+.footer-box{
+    padding: 10px;
+}
+
+.footer-box img{
+    width: 100px;
+    margin-bottom: 20px;
+
+}
+
+.footer-box p{
+    color: black;
+}
+
+.footer-box .fa{
+    margin-right: 8px;
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding-top: 5px;
+    border-radius: 10px;
+    background-color: rgb(226, 226, 226);
+    color: black;
+}
+.footer-box .form-control{
+    box-shadow: none;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    max-width: 200px;
+    color: black;
+}
+
+.footer-box .btn-primary{
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    box-shadow: none;
+    border: none;
+    border-radius: 20px;
+    margin-top: 20px;
+    background-color: #3bb78f;
+}
+
+.footer-box .btn-primary:hover{
+    background-color: rgb(35, 46, 43);
+    color: #fff;
+}
+
+hr{
+    background: #8d8b8bad;
+   
+}
+.copyright{
+    margin-bottom: 0;
+    padding-bottom: 20px;
+    text-align: center;
+}
+

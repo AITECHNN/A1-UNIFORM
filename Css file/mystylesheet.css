@@ -1,0 +1,664 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Montserrat+Subrayada:wght@700&family=Spectral+SC:wght@300&family=Staatliches&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+/*responsive mediaquery code*/
+@media (max-width:1199px){
+
+    .navbar-nav li a:hover {
+        border:none!important;
+        box-shadow:none!important;
+    }
+    .searchBox{
+        display: block;
+        margin-bottom: 2rem;
+    }
+
+    
+}
+
+ @media(max-width:998px){
+    html {
+        font-size: 55%;
+    }
+}
+
+@media(min-width:260px){
+    html {
+        font-size: 10%;
+    }
+} 
+
+
+html{
+    font-size: 62.5%;
+}
+/*responsive mediaquery code*/
+
+#preloader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffff;
+    z-index: 9999999;
+}
+
+#status{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url(../preloader_gif/preloader2.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 15%;
+}
+
+
+
+
+/*--------------scrollbar-section-------*/
+ ::-webkit-scrollbar{
+    width: 1.0rem;
+}
+
+::-webkit-scrollbar-track{
+    width: 1.0rem;
+    background: #292828;
+    border-left: 0 solid rgb(255, 255, 255);
+    border-right: 0 solid rgb(255, 255, 255);
+    
+}
+::-webkit-scrollbar-thumb{
+    background: #3bb78f;
+    border-radius: 1rem;
+    width: 0;
+    height: 20%;
+    transform: 0.8s ease;
+    cursor: pointer;
+}
+ 
+/*-----------------Navbar section------------------------------*/
+#nav-bar{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    transition: all 1s ease-in-out;
+} 
+
+
+.navbar{
+    background-color:#60d47d;
+   
+}
+.navbar-nav li{
+padding: 0 2.5rem;
+
+}
+
+.navbar-nav li a{
+    font-family: 'Spectral SC', serif;
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    font-weight: 700;
+    transition: 0.8s;
+    letter-spacing: .1rem;
+   
+}
+.navbar-nav li a:hover{
+    box-shadow: 0 1rem 1rem -1.2rem rgba(0, 0 , 0, 5);
+    border-bottom: solid .2rem rgb(37, 66, 55);
+    transform: translateY(-8px);
+   
+}
+
+.navbar-toggler i{
+    color: rgb(0, 0, 0);
+    font-size: 2.5rem ;
+    border: none !important;
+
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+
+
+
+.searchbtn:hover
+{
+    text-decoration: none;
+    color: #fff;
+}
+
+.searchBox{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.searchText{
+    width: 0rem;
+    font-size: 1.4rem;
+    border-radius: 1.5rem;
+    border: none;
+    outline: none;
+    transition: all 0.8s;
+}
+.searchText:focus{
+    outline: none;
+}
+
+.searchbtn{
+    width: 4.0rem;
+    height: 4.0rem;
+    display: grid;
+    position: absolute;
+    right: 1rem;
+    place-items: center;
+    border-radius: 20px;
+    background-color: #000;
+    color: #ffff;
+  
+}
+.searchBox:hover >.searchText{
+    width: 20rem;
+    padding: 1.0rem;
+    box-shadow: 0 2rem 2rem -1.5rem rgba(0, 0 , 0, 10);
+
+}
+.searchBox:hover >.searchbtn{
+    background-color: #fff;
+    color: #000;
+}
+
+
+/*-----------------Navbar section-end------------------------------*/
+
+
+
+/*-------------------------------Banner section-------------------------------------*/
+#button{
+    font-size: 1.6rem;
+    color: rgb(0, 0, 0);
+    background-color: #3bb78f;
+    border-radius: .5rem;
+    transition: all 0.8s;
+    padding: .5rem 2.0rem;
+    
+}
+#button:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 2rem 2rem -1.5rem rgba(0, 0 , 0, 30);
+} 
+
+.carousel-caption{
+    margin-bottom: 25rem; 
+    
+}
+
+.drk:after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(0, 0, 0);
+    opacity: 0.4;
+}
+
+.carousel-caption h2{
+    font-family: 'Staatliches', cursive;
+    font-size: 4.0rem;
+    text-align: start;
+    letter-spacing: .3rem;
+    
+}
+.carousel-caption p{
+    text-align: start;
+    font-size: 1.3rem;
+    font-family: 'Cinzel Decorative', cursive;
+    
+}/*-------------------------------Banner section-end-----------------*/
+
+
+/*-----breadcrumbs-section-------*/
+
+.breadcrumb{
+    font-size: 1.8rem;
+    margin-top: 4rem;
+    font-family: 'Spectral SC', serif;
+    
+}
+.breadcrumb a{
+ text-decoration: none;
+ color: #60d47d;
+}
+
+.breadcrumb a:hover{
+    text-decoration: none;
+    color: #459258;
+}
+
+/*---------------categories section-------------------------*/
+
+#categories{
+    padding-top: 8rem;
+}
+.rounde img{
+    clip-path:circle();
+}
+
+
+.container h2{
+    letter-spacing: 1rem;
+    font-size: 2.8rem;
+    font-family: 'Montserrat Subrayada', sans-serif;
+}
+
+.image {
+    position: relative;
+    width: 100vw;
+}
+
+.image-img {
+    display: block;
+    width: 100%;
+    
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.30s;
+}
+
+.image-overlay-blur {
+    clip-path: circle();
+    backdrop-filter: blur(.4rem);
+}
+
+
+
+.image-overlay > * {
+    transform: translateY(3.0rem);
+    transition: transform 0.30s;
+}
+
+.image-overlay:hover {
+    opacity: 1;
+    
+}
+
+.image-overlay:hover > * {
+    transform: translateY(0);
+    
+}
+
+.image-title {
+    font-size: 2.8rem;
+    letter-spacing: .5rem;
+    font-family: 'Staatliches', cursive;
+}
+/*---------------categories section-end-------------------------*/
+
+
+
+
+
+
+/*---------------product-grid-section------------------------------*/
+
+.product{
+    padding-top: 8rem;
+}
+
+.product-grid{
+    font-family: 'Staatliches', cursive;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    transition: 0.9s all;
+    font-size: 2rem;
+    letter-spacing: .6rem;
+}
+
+
+
+.product-grid.product-image{
+    position: relative;
+    overflow: hidden;
+    transition: 0.9s all;
+    
+}
+.product-grid  .product-image  .image{
+    display: block;
+    width: 100%;
+}
+.product-grid  .product-image img{
+    width: 100%;
+    
+}
+
+.product-image  .pic2{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    transition: 0.9s all;
+}
+
+.product-grid  .product-image  .pic1{
+    
+    opacity: 1;
+    transition: 0.9s all;
+    padding-left: 0;
+}
+
+
+.product-grid:hover  .product-image  .pic1{
+    opacity: 0;
+    
+    
+}
+.product-grid:hover  .product-image  .pic2{
+    opacity: 1;
+    
+}
+.product-grid  .social{
+    padding: 0;
+    list-style-type: none;
+    position: absolute;
+    bottom: 15rem;
+    left:auto;
+}
+
+
+.product-grid  .social li{
+    margin:0 0 1.8rem;
+    opacity: 0;
+    transform: translateX(-40px);
+    transition: 0.9s all;
+}
+
+.product-grid:hover  .social li{
+    opacity: 1;
+    transform: translateX(0);
+    
+}
+
+.product-grid  .social li a{
+    color:rgb(255, 255, 255);
+    background-color: rgba(107, 107, 107, 0.582);
+    border-radius: 2rem;
+    font-size: 1.6rem;
+    line-height: 4.0rem;
+    width: 4.0rem;
+    display: block;
+    transition: 0.9s all;
+}
+
+
+
+.product-grid  .social li a:hover{
+    color:#fff;
+    background-color: #3bb78f;
+ 
+}
+.product-grid .product-content{
+    padding: 2.0rem 2.0rem;
+}
+.product-grid .product-content .title{
+    
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 0 0 1.0rem;
+}
+.product-content .title a{
+    justify-content: center;
+    color: #000;
+    text-decoration: none;
+    letter-spacing: .2rem;
+    transition: 0.5s all;
+}
+.product-content .title a:hover{
+    color:  #3bb78f;
+}
+.product-grid .price{
+    justify-content: center;
+    color:  #3bb78f;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: .8rem;
+}
+.product-grid .rating{
+    justify-content: center;
+    padding: 0;
+    list-style-type: none;
+}
+.product-grid .rating li{
+    color: #ffd200;
+    font-size: 1.5rem;
+    display: inline-block;
+}
+
+
+
+
+
+/*------------------------social media-section-------------------------------------*/
+#contact{
+    background: #f8f9fa;
+    padding: 10rem 0;
+}
+#contact p{
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-size: 4.0rem;
+    font-weight: 500;
+    margin-bottom: 4.0rem;
+}
+.contact-icons img{
+    width: 5.0rem;
+    transition: 0.8s;
+    margin-left: 2.0rem;
+}
+
+.contact-icons a:hover img{
+    transform: translateY(-20px);
+}
+
+
+
+/*----------contactus page-start--------*/
+#contactus{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    font-family: 'Staatliches', cursive;
+}
+.form-section{
+    font-size:1.5rem;
+    margin-top: 1rem;
+    font-family: 'Staatliches', cursive;
+}
+.form-group input{
+    font-size: 1.5rem;
+}
+
+.form-control textarea{
+    font-size: 1.5rem;
+}
+.form-group .btn-secondary{
+    font-size:1.5rem;
+    background-color: #3bb78f;
+    color:black;
+    font-weight: 600;
+    border: none;
+    font-family: 'Spectral SC', serif;
+    transition: all 0.8s;
+}
+.form-group .btn-secondary:hover{
+    background-color: rgb(47, 124, 103);
+    color: #fff;
+    box-shadow: 0 2rem 2rem -1.5rem rgba(0, 0 , 0, 10);
+    transform: translateY(-5px);
+}
+.address p .textNone{
+    font-size:1.5rem;
+    text-decoration: none;
+    color:#3bb78f;
+    font-weight: 200;
+    letter-spacing: .3rem;
+}
+.address p .textNone:hover{
+    color:rgb(47, 124, 103);
+    
+}
+.form-control.country{
+    font-size: 1.4rem;
+}
+
+
+/*----------contactus page-end--------*/
+
+
+
+
+
+/*----------aboutus page-start--------*/
+
+.about-company-section{
+    margin-top: 5rem;
+    font-size: 1.8rem;
+}
+
+.ourteam{
+    margin-top: 5rem;
+    font-size: 1.5rem;
+}
+.ourteam h3{
+    font-size: 2.5rem;
+    letter-spacing: .8rem;
+    text-transform: capitalize;
+    font-family: 'Staatliches', cursive;
+}
+
+
+
+
+
+/*-------feedback-section-start----*/
+#feedback{
+    font-size: 1.8rem;
+    margin-top: 4rem;
+    font-family: 'Staatliches', cursive;
+}
+
+
+.inputsection .btn{
+    border: none;
+    color: rgb(0, 0, 0);
+    background-color:#3bb78f ;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    justify-content: center;
+    font-family: 'Spectral SC', serif;
+    transition: all 0.8s;
+}
+.inputsection .btn:hover{
+    background-color: rgb(47, 124, 103);
+    color: #fff;
+    box-shadow: 2rem 2rem 2rem -1.8rem rgba(0, 0 , 0, 10);
+    transform: translateY(-8px);
+
+}
+
+
+
+/*----------------------------footer section-start----------------------*/
+#footer{
+    font-family: 'Spectral SC', serif;
+    background-color:#60d47d;
+    font-size: 1.5rem;
+}
+.footer-box{
+    padding: 2.0rem;
+    
+}
+.footer-box img{
+    width: 10rem;
+    margin-bottom: 2.0rem;
+
+}
+.footer-box .fa{
+    margin-right: .8rem;
+    font-size: 2.0rem;
+    width: 3.0rem;
+    height: 3.0rem;
+    text-align: center;
+    padding-top: .5rem;
+    border-radius: 1.0rem;
+    background-color: rgb(226, 226, 226);
+}
+.footer-box .form-control{
+    box-shadow: none;
+    border: none;
+    border-radius: 1.0rem;
+    margin-top: 2.0rem;
+    max-width: 18rem;
+    font-size: 1.3rem;
+}
+
+.footer-box .btn-primary{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    box-shadow: none;
+    border: none;
+    border-radius: 2.0rem;
+    margin-top: 2.0rem;
+    background-color: #3bb78f;
+    transition: all 0.8s;
+}
+
+.footer-box .btn-primary:hover{
+    background-color: rgb(35, 46, 43);
+    color: #fff;
+    box-shadow: 0 2rem 2rem -1.5rem rgba(0, 0 , 0, 10);
+    transform: translateY(-5px);
+}
+
+hr{
+    background: #8d8b8bad;
+   
+}
+.copyright{
+    margin-bottom: 0;
+    padding-bottom: 3.0rem;
+    text-align: center;
+}/*----------------------------footer section-end----------------------*/
